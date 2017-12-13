@@ -6,19 +6,60 @@ namespace KMatrix
 {
     public class Matrix:IFormattable, IEquatable<Matrix>
     {
-        private int[,] Elements { get; }
+        /// <summary>
+        /// Elements of the matrix
+        /// </summary>
+        public int[,] Elements { get; }
 
+        /// <summary>
+        /// Returns count of columns in the matrix
+        /// </summary>
         public int Length { get; set; }
 
+        /// <summary>
+        /// Returns count of rows in the matrix
+        /// </summary>
         public int Width { get; set; }
 
+        private int _elementLength;
+
+        private int _elementWidth;
+
+        /// <summary>
+        /// Constructor class 
+        /// </summary>
+        /// <param name="length">Count of columns</param>
+        /// <param name="width">Count of rows </param>
         public Matrix(int length, int width)
         {
             Elements= new int[length,width];
             Length = length;
             Width = width;
+            _elementWidth = 0;
+            _elementLength = 0;
         }
 
+        /// <summary>
+        /// Adding elements in a matrix
+        /// </summary>
+        /// <param name="values"></param>
+        public void Add(int values)
+        {
+            if (_elementWidth >= Width - 1&& _elementLength>=Length)
+            {
+                ArgumentException argEx = new ArgumentException("Index is out of range", "index");
+                throw argEx;
+            }
+            if (_elementWidth >= Width - 1 && _elementLength >= Length)
+            {
+
+            }
+        }
+        /// <summary>
+        /// Determines whether the specified object is equal to the current object
+        /// </summary>
+        /// <param name="other">second matrixe</param>
+        /// <returns></returns>
         public bool Equals(Matrix other)
         {
             if (other != null && (Length!= other.Length  || Width != other.Width))
@@ -56,7 +97,12 @@ namespace KMatrix
             }
             return stringBuilder.ToString();
         }
-
+        /// <summary>
+        /// Adds two matrixe
+        /// </summary>
+        /// <param name="firstMatrix">First matrixe</param>
+        /// <param name="secondMatrix">Secon matrixe</param>
+        /// <returns></returns>
         public static Matrix operator +(Matrix firstMatrix, Matrix secondMatrix)
         {
             if (firstMatrix.Length != secondMatrix.Length || firstMatrix.Width != secondMatrix.Width)
@@ -74,7 +120,12 @@ namespace KMatrix
             }
             return resuitMatrix;
         }
-
+        /// <summary>
+        /// Subtracts two matrixes
+        /// </summary>
+        /// <param name="firstMatrix">First matrixe</param>
+        /// <param name="secondMatrix">Secon matrixe</param>
+        /// <returns></returns>
         public static Matrix operator -(Matrix firstMatrix, Matrix secondMatrix)
         {
             if (firstMatrix.Length != secondMatrix.Length || firstMatrix.Width != secondMatrix.Width)
@@ -92,7 +143,12 @@ namespace KMatrix
             }
             return resuitMatrix;
         }
-
+        /// <summary>
+        /// Multiplies the matrix by the number
+        /// </summary>
+        /// <param name="firstMatrix">First matrixe</param>
+        /// <param name="value">Number</param>
+        /// <returns></returns>
         public static Matrix operator *(Matrix firstMatrix, int value)
         {
             Matrix resuitMatrix = new Matrix(firstMatrix.Length, firstMatrix.Width);
@@ -105,7 +161,12 @@ namespace KMatrix
             }
             return resuitMatrix;
         }
-
+        /// <summary>
+        /// Multiplies two matrixes
+        /// </summary>
+        /// <param name="firstMatrix">First matrixe</param>
+        /// <param name="secondMatrix">Secon matrixe</param>
+        /// <returns></returns>
         public static Matrix operator *(Matrix firstMatrix, Matrix secondMatrix)
         {
             Matrix resuitMatrix = new Matrix(firstMatrix.Length, firstMatrix.Width);
@@ -120,7 +181,10 @@ namespace KMatrix
             }
             return resuitMatrix;
         }
-
+        /// <summary>
+        /// Returns a new square matrix as current transposed matrix
+        /// </summary>
+        /// <returns>New matrix</returns>
         public Matrix Transpose()
         {
             Matrix resuitMatrix = new Matrix( Width, Length);

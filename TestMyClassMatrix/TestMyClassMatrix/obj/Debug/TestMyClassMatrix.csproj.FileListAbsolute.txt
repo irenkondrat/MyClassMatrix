@@ -1,0 +1,8 @@
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\bin\Debug\TestMyClassMatrix.exe.config
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\bin\Debug\TestMyClassMatrix.exe
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\bin\Debug\TestMyClassMatrix.pdb
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\bin\Debug\KMatrix.dll
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\bin\Debug\KMatrix.pdb
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\obj\Debug\TestMyClassMatrix.csprojResolveAssemblyReference.cache
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\obj\Debug\TestMyClassMatrix.exe
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\TestMyClassMatrix\TestMyClassMatrix\obj\Debug\TestMyClassMatrix.pdb

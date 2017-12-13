@@ -1,0 +1,5 @@
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\KMatrix\KMatrix\bin\Debug\KMatrix.dll
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\KMatrix\KMatrix\bin\Debug\KMatrix.pdb
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\KMatrix\KMatrix\obj\Debug\KMatrix.csprojResolveAssemblyReference.cache
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\KMatrix\KMatrix\obj\Debug\KMatrix.dll
+D:\Epam Labs\FirstPracticalTasks\MyClassMatrix\KMatrix\KMatrix\obj\Debug\KMatrix.pdb
